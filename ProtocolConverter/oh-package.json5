@@ -6,6 +6,6 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "@ohos/library":"file:../Network"
+    "@ohos/Network":"file:../Network"
   }
 }
