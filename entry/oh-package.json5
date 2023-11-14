@@ -6,7 +6,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@ohos/library":"file:../ProtocolConverter"
+    "@ohos/ProtocolConverter":"file:../ProtocolConverter"
   }
 }
 

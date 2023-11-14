@@ -22,12 +22,16 @@ struct PrivacyPage {
           top: $r('app.float.icon_margin_top'),
           bottom: $r('app.float.icon_margin_bottom')
         })
+        .onClick(() =>(
+          console.log('11')
+        ))
       Web({
         src: $rawfile('privacy.html'),
         controller: this.webController
       })
     }
   }
+
 
    @Builder Title() {
     Row() {

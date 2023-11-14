@@ -13,19 +13,20 @@ export class SocketClient {
   constructor(listener: SocketListener, protocol: 'TCP' | 'UDP') {
     this.listener = listener;
     this.protocol = Protocol[protocol];
+    console.info(this.protocol);
   }
 
   connect(ip: string, port: string) {
-    // if (this.status == Status.unDisconnected) {
-    //   this.socket = socket.constructTCPSocketInstance();
-    //   promise.then(() => {
-    //     Logger.info(this.TAG, `connect success`)
-    //   }).catch((err: Error) => {
-    //     Logger.info(this.TAG, `connect success error:${JSON.stringify(err)}`)
-    //   })
-    // } else {
-    //   Logger.info(this.TAG, 'status is not disconnected:' + this.status)
-    // }
+    if (this.status == Status.unDisconnected) {
+      this.socket = socket.constructTCPSocketInstance();
+      // promise.then(() => {
+      //   Logger.info(this.TAG, `connect success`)
+      // }).catch((err: Error) => {
+      //   Logger.info(this.TAG, `connect success error:${JSON.stringify(err)}`)
+      // })
+    } else {
+      Logger.info(this.TAG, 'status is not disconnected:' + this.status)
+    }
   }
 }
 

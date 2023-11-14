@@ -1,4 +1,5 @@
 import router from '@ohos.router';
+import { Protocol } from '@ohos/ProtocolConverter/src/main/ets/entry/Protocol';
 import { ListItemData } from '../common/bean/ListItemData';
 import { CommonConstants } from '../common/constants/CommonConstants';
 import AboutViewModel from '../viewmodel/AboutViewModel';
